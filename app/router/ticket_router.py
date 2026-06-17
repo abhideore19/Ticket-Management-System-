@@ -4,10 +4,10 @@ from fastapi import HTTPException
 
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.dependencies import get_current_user
-from app.models import Ticket, Comment
-from app.schemas import (
+from database import get_db
+from dependencies import get_current_user
+from models import Ticket, Comment
+from schemas import (
     TicketCreate,
     TicketUpdate,
     CommentCreate
