@@ -10,9 +10,9 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Ticket Management System")
 
-include_router(auth_router)
-include_router(ticket_router, prefix="/tickets", tags=["Tickets"])
-include_router(admin_router, prefix="/admin", tags=["Admin"])
+app.include_router(auth_router)
+app.include_router(ticket_router, prefix="/tickets", tags=["Tickets"])
+app.include_router(admin_router, prefix="/admin", tags=["Admin"])
 
 
 @app.get("/")
