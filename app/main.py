@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 
-from app.database import Base, engine
+from database import Base, engine
 
-from app.router.auth_router import router as auth_router
-from app.router.ticket_router import router as ticket_router
-from app.router.admin_router import router as admin_router
+from router.auth_router import router as auth_router
+from router.ticket_router import router as ticket_router
+from router.admin_router import router as admin_router
 
 Base.metadata.create_all(bind=engine)
 
