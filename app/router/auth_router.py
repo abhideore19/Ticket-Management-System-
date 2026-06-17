@@ -8,7 +8,7 @@ from utils.security import (
     hash_password,
     verify_password
 )
-from app.auth import create_access_token
+from auth import create_access_token
 
 router = APIRouter()
 
