@@ -34,7 +34,7 @@ class CommentCreate(BaseModel):
 
 class AssignTicket(BaseModel):
     assigned_to: int
-
+    engineer_name: str
 
 class StatusUpdate(BaseModel):
     status: str

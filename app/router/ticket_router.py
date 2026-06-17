@@ -14,7 +14,6 @@ from app.schemas import (
 )
 
 router = APIRouter(
-    prefix="/tickets",
     tags=["Tickets"]
 )
 

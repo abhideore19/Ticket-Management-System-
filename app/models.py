@@ -29,8 +29,14 @@ class Ticket(Base):
     )
 
     assigned_to = Column(
-        Integer,
-        nullable=True
+    Integer,
+    nullable=True
+    )
+
+
+    engineer_name = Column(
+    String,
+    nullable=True
     )
 
 

@@ -59,15 +59,16 @@ def assign_ticket(
         )
 
     ticket.assigned_to = data.assigned_to
+    ticket.engineer_name = data.engineer_name
 
     db.commit()
     db.refresh(ticket)
 
     return {
         "message": "Ticket assigned successfully",
-        "ticket_id": ticket.id
+        "ticket_id": ticket.id,
+        "engineer_name": ticket.engineer_name
     }
-
 
 # Change Status
 @router.put("/status/{ticket_id}")
