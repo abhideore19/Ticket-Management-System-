@@ -8,8 +8,8 @@ from jose import jwt, JWTError
 from dotenv import load_dotenv
 import os
 
-from app.database import get_db
-from app.models import User
+from database import get_db
+from models import User
 
 load_dotenv()
 
