@@ -29,7 +29,6 @@ def register(
         )
 
     hashed_password = hash_password(user.password)
-
     new_user = User(
         username=user.username,
         email=user.email,
